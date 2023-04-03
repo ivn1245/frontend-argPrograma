@@ -1,1 +1,425 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+  body{
+    background-image: url(./assets/images/fondo\ 3.png);
+    background-color: #e0faf7;
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: 1350px;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Concert One', cursive;
+  }
+
+ section{
+  padding-left: 150px;
+  padding-right: 150px;
+ }
+
+  header {
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(212, 62, 21, 0.792);
+    padding: 25px 15px;
+    color: #fff;
+    margin-top: 0px;
+    width: 100%;
+    height: 8vh;
+  }
+  
+  .title {
+    font-size: 42px;
+    margin: 0;
+  
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  nav li a:hover {
+    background-color: #ff7e5d;
+    color:black;
+    transition: 0.5s;
+  
+  }
+  /* comienzo de la presentacion */
+
+  .presentacion {
+    height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background-color: #e3e3e3;*/
+  }
+
+  .centro{
+    display: flex;
+    margin-top: 16vh;
+  }
+
+  .para_imagen {
+    background-image: url(./assets/images/logo\ usuario.png);
+    background-position: center;
+    background-size: 360px;
+    width: 370px;
+    border-radius: 360px;
+  }
+
+  .para_imagen img{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 370px;
+    object-fit: cover;
+  
+  }
+
+  .texto_presentación {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .nombre{
+    font-family: 'Concert One', cursive;
+    margin-bottom: -40px;
+    font-size: 50px;
+  }
+  
+
+  .título{
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    margin-bottom: -20px;
+  }  
+  
+ .texto_presentación button{
+  background-color: rgb(215, 253, 253);
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  font-family: 'Concert One', cursive;
+  border-radius: 5px;
+ }
+
+ .texto_presentación button:hover{
+  background-color: rgb(46, 154, 212);
+ }
+
+  /* about me y habilidades*/
+
+  .about-me{
+    height: 1000px;
+    margin-top: 80px;
+    /*background-color: #d3d3d3;*/
+    display:block;
+  }
+
+  .titulo-about-me{
+    font-size: 35px;
+  }
+
+  .hr-about-me{
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(46, 154, 212);
+  }
+
+  .contenedor-about-me{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: 150px 100px 150px;
+    grid-template-columns: 240px 280px 280px;
+    grid-template-areas:
+      "header menu menu"
+      "header content content"
+      ". content content";
+  }
+  
+  .header {
+    grid-area: header;
+    background-image: url(./assets/images/logo\ usuario.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(179, 247, 247);
+    border-radius: 10px;
+  }
+
+  .header img{
+    display: flex;
+    justify-content: top;
+    width: 250px;
+    
+  }
+  
+  .menu {
+    grid-area: menu;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .content {
+  font-size: 25px;
+    grid-area: content;
+  }
+  
+  .box {
+    font-size: 20px;
+    font-weight: bold;
+    height: 10px;
+    margin: 3px;
+    padding: 13px;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box:hover{
+    transition:0.4s;
+    background-color: rgb(179, 247, 247);
+  }
+
+  /* comienzo softskills */
+.soft-skills{
+  padding:50px 20px;
+}
+.soft-skills .contenido-seccion{
+  max-width: 700px;
+  margin: auto;
+}
+
+.soft-skills h2{
+  font-size: 38px;
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+.soft-skills .fila{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.soft-skills .fila .col{
+ 
+  width: 100%;
+  padding: 0 40px;
+}
+
+.soft-skills .skill > span{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.soft-skills .skill .barra-skill{
+  height: 8px;
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.soft-skills .skill .progreso{
+  background-color: #97ebf1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.soft-skills .skill .barra-skill span{
+  position: absolute;
+  color: #000000;
+  font-weight: bold;
+  height: 35px;
+  width: 35px;
+  background-color: #97ebf1;
+  border-radius: 50px;
+  line-height: 35px;
+  text-align: center;
+  top: -14px;
+  right: -15px;
+  font-size: 17px;
+}
+/* animaciones */
+
+.soft-skills .skill .trabajo{
+  width: 0%;
+  animation: 3s trabajo forwards;
+}
+@keyframes trabajo {
+  0%{width: 0%;}
+  100%{width: 97%;}
+}
+
+.soft-skills .skill .creatividad{
+  width: 0%;
+  animation: 3s creatividad forwards;
+}
+
+@keyframes creatividad {
+  0%{width: 0%;}
+  100%{width: 85%;}
+}
+
+.soft-skills .skill .comunicacion{
+  width: 0%;
+  animation: 3s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+  0%{width: 0%;}
+  100%{width: 93%;}
+}
+
+.soft-skills .skill .dedicacion{
+  width: 0%;
+  animation: 3s dedicacion forwards;
+}
+
+@keyframes dedicacion {
+  0%{width: 0%;}
+  100%{width: 90%;}
+}
+
+.soft-skills .skill .liderazgo{
+  width: 0%;
+  animation: 3s liderazgo forwards;}
+  
+@keyframes liderazgo {
+  0%{width: 0%;}
+  100%{width: 84%;}
+  }
+
+.soft-skills .skill .altruismo{
+   width: 0%;
+ animation: 3s altruismo forwards;}
+      
+@keyframes altruismo {
+   0%{width: 0%;}
+  100%{width: 90%;}
+}
+
+  /*estudios*/
+
+  .estudios{
+    height: 550px;
+    /* background-color: #e3e3e3; */
+  }
+
+  .titulo-estudios{
+    font-size: 35px;
+  }
+
+  .hr-estudios{
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(46, 154, 212);
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*proyectos y experiencia laboral*/
+
+  .experiencia{
+    height: 550px;
+    /*background-color: #d3d3d3;*/
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* contacto*/
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding-left: 350px ;
+    padding-right: 350px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .container-redes{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  .container-redes a i{
+    color: #ffffff;
+    border-radius: 360px;
+    font-size: 30px;
+  }
+
+  .container-redes a i:hover{
+    color:  #ff7e5d;
+    transition: 1s;
+  }
+
+  .mail{
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
